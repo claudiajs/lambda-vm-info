@@ -1,7 +1,8 @@
-Utility Lambda function to show information about the container VM. It can show:
+Utility AWS Lambda function to show information about the container VM. It can show:
 
 * currently installed dynamic libraries (`ldconfig -p`)
 * currently installed RPM packages (`yum list installed`)
+* environment variables
 
 ## Prerequisites
 
@@ -15,4 +16,5 @@ Utility Lambda function to show information about the container VM. It can show:
 3. The installation procedure will print the root API URL. 
 4. Use `<URL>/ldconfig` in a browser to list active libraries
 5. Use `<URL>/packages` in a browser to list active packages
+5. Use `<URL>/env` in a browser to list environment variables
 

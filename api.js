@@ -11,4 +11,8 @@ api.get('/packages', function () {
 	'use strict';
 	return cpPromise.spawn('/usr/bin/yum', ['list', 'installed']);
 }, {success: { contentType: 'text/plain'}});
+api.get('/env', function () {
+	'use strict';
+	return cpPromise.spawn('/bin/env', []);
+}, {success: { contentType: 'text/plain'}});
 module.exports = api;
