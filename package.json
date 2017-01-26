@@ -1,10 +1,10 @@
 {
   "name": "vm-info",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility API to inspect Lambda VM and print available libraries and packages",
   "main": "index.js",
   "scripts": {
-    "start": "claudia create --region us-east-1 --api-module api",
+    "start": "claudia create --region us-east-1 --api-module api --timeout 20",
     "update": "claudia update"
   },
   "author": "Gojko Adzic <gojko@gojko.com",
